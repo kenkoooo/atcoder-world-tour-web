@@ -75,7 +75,7 @@ export default () => {
                 <h2>{user.user_info.country}</h2>
               </Row>
               <Row>
-                <h2>{user.point} pt</h2>
+                <h2>{Math.round(user.point * 10) / 10} pt</h2>
               </Row>
             </Col>
           </Row>
