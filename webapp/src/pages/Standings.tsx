@@ -57,7 +57,7 @@ export default () => {
                     {ranks[i]}
                   </p>
                 </Col>
-                <Col xs="1" lg="1">
+                <Col xs="3" lg="1">
                   <img
                     width="100%"
                     src={user.user_info.image_url}
@@ -65,7 +65,7 @@ export default () => {
                     alt={user.id}
                   />
                 </Col>
-                <Col xs="6" lg="7" className="align-self-center">
+                <Col xs="5" lg="7" className="align-self-center">
                   <Row
                     style={{
                       fontWeight: "bold",

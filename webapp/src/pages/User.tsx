@@ -57,7 +57,7 @@ export default () => {
       >
         <Container>
           <Row className="py-4">
-            <Col sm="3" xs="1">
+            <Col sm="3" xs="6">
               <img
                 width="100%"
                 src={user.user_info.image_url}
@@ -65,7 +65,7 @@ export default () => {
                 alt={user.id}
               />
             </Col>
-            <Col sm="9" xs="12">
+            <Col sm="9" xs="9" className="ml-2">
               <Row>
                 <h1 className="display-1" style={{ fontWeight: "bold" }}>
                   {user.id}
@@ -101,7 +101,7 @@ export default () => {
           </Row>
           {results.map(r => (
             <Row key={r.contest.id} className="mb-4">
-              <Col sm="2" className="px-0">
+              <Col sm="3" className="px-0">
                 <h2>{r.contestRank}</h2>
               </Col>
               <Col sm="5" md="9">

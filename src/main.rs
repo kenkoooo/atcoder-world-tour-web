@@ -19,11 +19,6 @@ fn main() {
     let output = Path::new(output);
     assert!(output.is_dir(), "{} is not dir", output.to_str().unwrap());
     let output = output.join("result.json");
-    assert!(
-        !output.exists(),
-        "{} already exists.",
-        output.to_str().unwrap()
-    );
 
     let contests: Vec<ContestInfo> =
         serde_json::from_str(&fs::read_to_string(contest_list_path).unwrap()).unwrap();
