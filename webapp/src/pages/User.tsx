@@ -57,7 +57,7 @@ export default () => {
       >
         <Container>
           <Row className="py-4">
-            <Col sm="3" xs="6">
+            <Col sm="3" xs="12">
               <img
                 width="100%"
                 src={user.user_info.image_url}
@@ -65,7 +65,7 @@ export default () => {
                 alt={user.id}
               />
             </Col>
-            <Col sm="9" xs="9" className="ml-2">
+            <Col sm="9" xs="12" >
               <Row>
                 <h1 className="display-1" style={{ fontWeight: "bold" }}>
                   {user.id}
